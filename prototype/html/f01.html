@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="referrer" content="no-referrer" />
+    <title>緯創-Material X</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- jQuery-ui -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <!-- Bootstrap_4.5.2 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- material_icon -->
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/material-icons-ie.css">
+    <!-- malihu-custom-scrollbar-plugin_3.1.5 -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <!-- lity_2.4.1 -->
+    <link rel="stylesheet" href="css/lity.css">
+    <!-- 全域 -->
+    <link rel="stylesheet" href="css/global.css">
+    <!-- 框架 -->
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- 頁面 -->
+    <link rel="stylesheet" href="css/page.css">
+    <!-- pg使用 -->
+    <link rel="stylesheet" href="css/pg.css">
+    <!-- echarts -->
+    <script src="js/echarts.min.js"></script>
+    <!-- css -->
+    <style>
+        #pieChart01 {
+        width: 100%;
+        height: 400px;
+    }
+    </style>
+</head>
+
+<body id="canvas">
+    <div class="frame">
+        <!-- frame: content -->
+        <div class="frame-block rightBlock" id="right_content">
+            <!-- header -->
+            <header class="frame-content headerModule">
+                <div class="headerModule-inner">
+                    <div class="header-item header-title">
+                        <div class="header-title-name">
+                            <h1>指標管理看板</h1>
+                        </div>
+                        <div class="header-subtitle-name">
+                            <h1>庫存在庫天數</h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- main -->
+            <main class="frame-content mainModule">
+                <div class="content">
+                    <!-- card -->
+                    <div class="content-component content-card">
+                        <!-- content-card-search -->
+                        <div class="content-card-item content-card-search">
+                            <div class="srearch-inner">
+                                <form action="">
+                                    <div class="search-item search-field">
+                                        <div class="search-field-inner">
+                                            <div class="search-field-item">
+                                                <div class="field-title">Plant</div>
+                                                <div class="field-obj">
+                                                    <select name="" id="">
+                                                        <option>F232</option>
+                                                        <option>ALL</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-field-item">
+                                                <div class="field-title">部門</div>
+                                                <div class="field-obj">
+                                                    <select name="" id="">
+                                                        <option>ALL</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-field-item">
+                                                <div class="field-title">IM料號</div>
+                                                <div class="field-obj">
+                                                    <input type="text" placeholder="Enter">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-item search-btn">
+                                        <!-- btn -->
+                                        <div class="content-component content-btn">
+                                            <button class="content-btn-primary">查詢</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- content-card-tab -->
+                        <div class="content-card-item content-card-tab">
+                            <ul>
+                                <li>
+                                    <a href="#" class="tab-active"><span class="tab-name">庫存在庫總覽分析</a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="tab-name">大工具室在庫分析</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- content-card-complex -->
+                        <div class="content-card-item content-card-complex">
+                            <div class="complex-inner">
+                                <div class="complex-item">
+                                    <!-- content-card-echarts -->
+                                    <div class="content-card-echarts info-echarts">
+                                        <div class="echarts-inner">
+                                            <div class="echarts-item">
+                                                <div class="echarts-item-inner">
+                                                    <div class="echarts-title">庫存在庫佔比</div>
+                                                    <div class="echarts-img">
+                                                        <div id="pieChart01"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="complex-item">
+                                    <div class="echarts-title">庫存在庫總覽清單</div>
+                                    <!-- content-catd-table -->
+                                    <div class="content-card-item content-card-table">
+                                        <div class="table-header">
+                                            <div class="table-header-item table-header-amount">
+                                                <div class="amount-inner">共<span>4</span>項</div>
+                                            </div>
+                                            <div class="table-header-item table-header-btn">
+                                                <ul>
+                                                    <li><button>下載</button></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="ng-zorro-table">ng-zorro-table</div>
+                                        <div class="table-footer">pagination</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- copyright -->
+                    <div class="content-component content-copyright">COPYRIGHT ©2021 WISTRON CORPORATION. All RIGHTS RESERVED.</div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+<!-- jQuery_3.5.1  -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<!-- jQuery-ui_1.12.1 -->
+<script src="js/jquery-ui.js"></script>
+<!-- Popper -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap_4.5.2 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- malihu-custom-scrollbar-plugin_3.1.5 -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- lity_2.4.1 -->
+<script src="js/lity.js"></script>
+<!-- 自定義js -->
+<script src="js/layout.js"></script>
+<!-- pg使用 -->
+<script src="js/pg.js"></script>
+<!-- pg使用 -->
+<script src="js/pg.js"></script>
+<script>
+var myChart1 = echarts.init(document.getElementById('pieChart01'));
+var option1 = {
+    tooltip: {
+        trigger: 'item',
+        confine: true
+    },
+    legend: {
+        x: '0',
+        y: '250',
+        orient: 'horizontal',
+        data: [{
+                value: 17,
+                name: '< 14 days   17%   30筆'
+            },
+            {
+                value: 25,
+                name: '14-30 days   25%   45筆'
+            },
+            {
+                value: 25,
+                name: '1-6 month(s)   25%   45筆'
+            },
+            {
+                value: 8,
+                name: '6-12 month(s)   8%   15筆'
+            },
+            {
+                value: 7,
+                name: '> 1 year   4%   7筆'
+            }
+        ]
+    },
+    title: {
+        text: "180",
+        left: "center",
+        top: "22%",
+        textStyle: {
+            color: "#333",
+            fontSize: 32,
+            align: "center"
+        }
+    },
+    graphic: {
+        type: "text",
+        left: "center",
+        top: "33%",
+        style: {
+            text: "總在庫庫存量",
+            textAlign: "center",
+            fill: "#333",
+            fontSize: 14
+        }
+    },
+    series: [{
+        name: '全廠庫存總量',
+        type: 'pie',
+        radius: ['85%', '70%'],
+        avoidLabelOverlap: false,
+        itemStyle: {
+            borderRadius: 0,
+            borderColor: '#f7f7f7',
+            borderWidth: 1
+        },
+        center: ['50%', '120px'],
+        label: {
+            show: false,
+            position: 'left'
+        },
+        emphasis: {
+            label: {
+                show: false,
+                fontSize: '21',
+                fontWeight: 'normal'
+            }
+        },
+        hoverAnimation: false,
+        data: [{
+                value: 17,
+                name: '< 14 days   17%   30筆'
+            },
+            {
+                value: 25,
+                name: '14-30 days   25%   45筆'
+            },
+            {
+                value: 25,
+                name: '1-6 month(s)   25%   45筆'
+            },
+            {
+                value: 8,
+                name: '6-12 month(s)   8%   15筆'
+            },
+            {
+                value: 7,
+                name: '> 1 year   4%   7筆'
+            }
+        ],
+        color: ['#C1212A', '#006C91', '#A1CC57', '#FCC801', '#F67D1C', '#C1212A']
+    }],
+};
+myChart1.setOption(option1);
+</script>
+
+</html>

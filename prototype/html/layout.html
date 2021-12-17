@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>緯創-Material X</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- jQuery-ui -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery-ui.theme.css">
+    <!-- Bootstrap_4.5.2 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- material_icon -->
+    <link rel="stylesheet" href="css/material-icons.css">
+    <link rel="stylesheet" href="css/material-icons-ie.css">
+    <!-- malihu-custom-scrollbar-plugin_3.1.5 -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <!-- tabulator_4.9 -->
+    <!-- <link rel="stylesheet" href="css/tabulator.min.css"> -->
+    <!-- datepicker_5.1.0 -->
+    <!-- <link rel="stylesheet" href="css/jquery.datepick.css"> -->
+    <!-- lity_2.4.1 -->
+    <link rel="stylesheet" href="css/lity.css">
+    <!-- 全域 -->
+    <link rel="stylesheet" href="css/global.css">
+    <!-- 框架 -->
+    <link rel="stylesheet" href="css/layout.css">
+    <!-- 頁面 -->
+    <link rel="stylesheet" href="css/page.css">
+    <!-- pg使用 -->
+    <link rel="stylesheet" href="css/pg.css">
+</head>
+
+<body id="canvas">
+    <div class="frame">
+        <!-- frame: menu -->
+        <nav class="frame-block leftBlock" id="left_menu" menu-html='include/menu.html'></nav>
+        <!-- frame: content -->
+        <div class="frame-block rightBlock" id="right_content">
+            <!-- header -->
+            <header class="frame-content headerModule">
+                <div class="headerModule-inner">
+                    <div class="header-item header-title">
+                        <div class="menu-btn">
+                            <a href="javascript:;" onclick="menuToggle()" class="menu-active"><span class="menu-bar"></span></a>
+                        </div>
+                        <div class="header-title-name">
+                            <h1>單位用量機種維護</h1>
+                        </div>
+                        <div class="header-subtitle-name">
+                            <h1>單元名稱</h1>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- main -->
+            <main class="frame-content mainModule">
+                <div class="content">
+                    <!-- card -->
+                    <div class="content-component content-card">
+                        <!-- content-card-search -->
+                        <div class="content-card-item content-card-search">
+                            <div class="srearch-inner">
+                                <form action="">
+                                    <div class="search-item search-field">
+                                        <div class="search-field-inner">
+                                            <div class="search-field-item">
+                                                <div class="field-title field-required">Plant</div>
+                                                <div class="field-obj">
+                                                    <select name="" id="">
+                                                        <option>F232</option>
+                                                        <option>ALL</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-field-item">
+                                                <div class="field-title">客戶</div>
+                                                <div class="field-obj">
+                                                    <select name="" id="">
+                                                        <option>ZARA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-field-item">
+                                                <div class="field-title">機種</div>
+                                                <div class="field-obj">
+                                                    <select name="" id="">
+                                                        <option>AD161</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-field-item">
+                                                <div class="field-title">Product</div>
+                                                <div class="field-obj">
+                                                    <select name="" id="">
+                                                        <option>ZARA</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-field-item">
+                                                <div class="field-title">Function</div>
+                                                <div class="field-obj">
+                                                    <select name="" id="">
+                                                        <option>SMT</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="search-field-item">
+                                                <div class="field-title">關鍵字</div>
+                                                <div class="field-obj">
+                                                    <input type="text" placeholder="請輸入IM料號/機種/Product">
+                                                </div>
+                                            </div>
+                                            <div class="search-field-item">
+                                                <div class="field-title">日期</div>
+                                                <div class="field-obj field-date">
+                                                    <div class="field-date-inner">
+                                                        <div class="date-item">
+                                                            <input type="text" placeholder="Enter">
+                                                        </div>
+                                                        <div class="date-item">~</div>
+                                                        <div class="date-item">
+                                                            <input type="text" placeholder="Enter">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="search-item search-btn">
+                                        <!-- btn -->
+                                        <div class="content-component content-btn">
+                                            <button class="content-btn-primary">查詢</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- content-card-tab -->
+                        <div class="content-card-item content-card-tab">
+                            <ul>
+                                <li>
+                                    <a href="#"><span class="tab-name">使用中</span><span class="tab-num">0</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="tab-name">簽核中</span><span class="tab-num">0</span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="tab-name">已刪除</span><span class="tab-num">0</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- content-card-tableInfo -->
+                        <div class="content-card-tableInfo">
+                            <ul>
+                                <li class="storage-safe">安全庫存</li>
+                                <li class="storage-dangerous">低於安全庫存水位</li>
+                            </ul>  
+                        </div>
+                        <!-- content-catd-table -->
+                        <div class="content-card-item content-card-table">
+                            <div class="table-header">
+                                <div class="table-header-item table-header-amount">
+                                    <div class="amount-inner">
+                                        <div class="amount-inner">共<span>10</span>項</div>
+                                    </div>
+                                </div>
+                                <div class="table-header-item table-header-btn">
+                                    <ul>
+                                        <li><a href='#popup01' data-lity>新增</a></li>
+                                        <li><button>批量新增</button></li>
+                                        <li><button>下載</button></li>
+                                        <li class="table-recovery"><a href='#popup02' data-lity>復原</a></li>
+                                        <li class="table-delete"><a href='#popup03' data-lity>刪除</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ng-zorro-table">ng-zorro-table</div>
+                            <div class="table-footer">pagination</div>
+                        </div>
+                    </div>
+                    <!-- copyright -->
+                    <div class="content-component content-copyright">COPYRIGHT ©2021 WISTRON CORPORATION. All RIGHTS RESERVED.</div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <!-- popup -->
+    <!-- new -->
+    <div class="lity-hide content-component content-popup" id="popup01">
+        <div class="popup-header">
+            <div class="pupup-header-inner">
+                <div class="popup-title">新增單位用量</div>
+                <div class="popup-close"><button class="lity-close" type="button" aria-label="Close (Press escape to close)" data-lity-close="">×</button></div>
+            </div>
+        </div>
+        <div class="">
+            <div class="popup-detail popup-new">
+                <div class="popup-field-inner">
+                    <div class="popup-field-item col-3">
+                        <div class="field-title field-required">Plant</div>
+                        <div class="field-obj">
+                            <select name="" id="">
+                                <option>ZARA</option>
+                                <option>ZARA</option>
+                                <option>ZARA</option>
+                                <option>ZARA</option>
+                                <option>ZARA</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-3">
+                        <div class="field-title field-required">需求部門</div>
+                        <div class="field-obj">
+                            <select name="" id="">
+                                <option>Choose Dept.</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-3">
+                        <div class="field-title field-required">評估人</div>
+                        <div class="field-obj">
+                            <input type="text" placeholder="Input ID">
+                        </div>
+                        <div class="field-tips">
+                            - -
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-3">
+                        <div class="field-title">Function</div>
+                        <div class="field-obj">
+                            <select name="" id="">
+                                <option>Choose Plant</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!-- end popup-field-inner -->
+                <hr>
+                <div class="popup-field-inner">
+                    <div class="popup-field-item col-3">
+                        <div class="field-title field-required">客戶名稱</div>
+                        <div class="field-obj">
+                            <select name="" id="">
+                                <option>Choose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-3 sec-item">
+                        <div class="field-obj">
+                            <input type="text" placeholder="Enter">
+                        </div>
+                    </div>
+                </div><!-- end popup-field-inner -->
+                <div class="popup-field-inner">
+                    <div class="popup-field-item col-3">
+                        <div class="field-title field-required">Product</div>
+                        <div class="field-obj">
+                            <select name="" id="">
+                                <option>Choose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-3 sec-item">
+                        <div class="field-obj">
+                            <input type="text" placeholder="Enter">
+                        </div>
+                    </div>
+                </div><!-- end popup-field-inner -->
+                <div class="popup-field-inner">
+                    <div class="popup-field-item col-3">
+                        <div class="field-title field-required">機種</div>
+                        <div class="field-obj">
+                            <select name="" id="">
+                                <option>Choose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-3 sec-item">
+                        <div class="field-obj">
+                            <input type="text" placeholder="Enter">
+                        </div>
+                    </div>
+                </div><!-- end popup-field-inner -->
+                <hr>
+                <div class="popup-field-inner">
+                    <div class="popup-field-item col-3">
+                        <div class="field-title field-required">IM料號</div>
+                        <div class="field-obj">
+                            <input type="text" placeholder="Enter">
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-3">
+                        <div class="field-title">商品訊息</div>
+                        <div class="field-obj">
+                            - -
+                        </div>
+                    </div>
+                </div><!-- end popup-field-inner -->
+                <hr>
+                <div class="popup-field-inner">
+                    <div class="popup-field-item col-3">
+                        <div class="field-title">購買方式</div>
+                        <div class="field-obj">
+                            <input type="text" placeholder="Enter">
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-3">
+                        <div class="field-title">購買頻率</div>
+                        <div class="field-obj">
+                            <input type="text" placeholder="Enter">
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-4">
+                        <div class="field-title field-required">計算方式</div>
+                        <div class="field-obj">
+                            <input type="radio" id="r1" name="rr" />
+                            <label for="r1"><span></span>手動計算</label>
+                            <input type="radio" id="r2" name="rr" />
+                            <label for="r2" class="field-radio"><span></span>自動計算
+                                <select name="" id="">
+                                    <option>Choose</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                </div><!-- end popup-field-inner -->
+                <div class="popup-field-inner">
+                    <div class="popup-field-item col-4">
+                        <div class="field-title field-required">係數</div>
+                        <div class="field-obj">
+                            <input type="text" placeholder="Enter" style="width: 50%;"><span>Unit/Kpcs</span>
+                        </div>
+                        <div class="field-tips" style="font-size: 12px;">
+                            (保留小數點至第4位/不可輸入負數/不可為空值)
+                        </div>
+                    </div>
+                    <div class="popup-field-item col-8">
+                        <div class="field-title field-required">計算邏輯</div>
+                        <div class="field-obj">
+                            <textarea name="" id="" cols="10" rows="5"></textarea>
+                        </div>
+                    </div>
+                </div><!-- end popup-field-inner -->
+            </div>
+            <div class="popup-btn">
+                <div class=" content-btn">
+                    <button class="content-btn-primary-line">取消</button>
+                    <button class="content-btn-primary">保存</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- recovery -->
+    <div class="lity-hide content-component content-popup" id="popup02">復原</div>
+    <!-- delete -->
+    <div class="lity-hide content-component content-popup" id="popup03">刪除</div>
+</body>
+<!-- jQuery_3.5.1  -->
+<script src="js/jquery-3.5.1.min.js"></script>
+<!-- jQuery-ui_1.12.1 -->
+<script src="js/jquery-ui.js"></script>
+<!-- Popper -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap_4.5.2 -->
+<script src="js/bootstrap.min.js"></script>
+<!-- malihu-custom-scrollbar-plugin_3.1.5 -->
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<!-- tabulator_4.9 -->
+<!-- <script src="js/tabulator.min.js"></script> -->
+<!-- lity_2.4.1 -->
+<script src="js/lity.js"></script>
+<!-- echarts -->
+<script src="js/echarts.min.js"></script>
+<!-- 自定義js -->
+<script src="js/layout.js"></script>
+<!-- pg使用 -->
+<script src="js/pg.js"></script>
+<!-- pg使用 -->
+<script src="js/pg.js"></script>
+<!-- include_menu -->
+<script>
+includeMenu();
+</script>
+
+</html>

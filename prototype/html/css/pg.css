@@ -1,0 +1,41 @@
+.material-icons {
+	 font-family: 'Material Icons'; 
+}
+
+.content-breadcrumb li:nth-child(1)::before {
+	 font-family: 'Material Icons'; 
+}
+
+.field-date-inner::after {
+     font-family: 'Material Icons'; 
+}
+
+.table-header-btn ul li.table-recovery a::before {
+    font-family: 'Material Icons';
+}
+
+.table-header-btn ul li.table-delete a::before {
+     font-family: 'Material Icons'; 
+}
+
+div.content-btn-disable::before {
+     font-family: 'Material Icons'; 
+}
+
+@media only screen and (min-width: 1200px) {}
+
+@media only screen and (max-width: 1199px) {}
+
+@media only screen and (min-width: 992px) {}
+
+@media only screen and (max-width: 991px) {}
+
+@media only screen and (min-width: 768px) {}
+
+@media only screen and (max-width: 767px) {}
+
+@media only screen and (max-width: 576px) {}
+
+@media only screen and (max-width: 440px) {}
+
+@media only screen and (max-width: 420px) {}
